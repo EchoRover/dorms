@@ -204,6 +204,7 @@ function loadData() {
 
             });
             highlightCurrentTime();
+            setInterval(highlightCurrentTime, 30000);
 
         })
         .catch(error => console.error('Error loading data:', error));
