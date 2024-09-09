@@ -1,0 +1,272 @@
+
+{
+    "Sunday":{
+        "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Boys]"],
+        "time_dependant":[
+            {
+                "name":"Curfew",
+                "start":"0:00",
+                "end":"5:00"
+            },
+        
+            {
+                "name":"GYM Girls",
+                "start":"8:00",
+                "end":"9:00"
+            },
+        
+            {
+                "name":"GYM Boys",
+                "start":"9:10",
+                "end":"10:10"
+
+            },
+           
+            {
+                "name":"GYM Girls",
+                "start":"16:00",
+                "end":"18:00"
+            },
+            {
+                "name":"GYM Boys",
+                "start":"18:10",
+                "end":"20:10"
+            },
+            {
+                "name":"Curfew",
+                "start":"23:00",
+                "end":"24:00"
+            }
+        ]
+    },
+    "Monday":{
+        "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Boys]"],
+        "time_dependant":[
+            {
+                "name":"Curfew",
+                "start":"0:00",
+                "end":"5:00"
+            },
+        
+            {
+                "name":"GYM Boys",
+                "start":"7:00",
+                "end":"8:00"
+            },
+            {
+                "name":"Classes",
+                "start":"9:00",
+                "end":"17:00"
+            },
+            {
+                "name":"GYM Girls",
+                "start":"17:00",
+                "end":"18:30"
+
+            },
+           
+            {
+                "name":"GYM Boys",
+                "start":"18:35",
+                "end":"20:35"
+            },
+            {
+                "name":"Curfew",
+                "start":"23:00",
+                "end":"24:00"
+            }
+        ]
+    },
+    "Tuesday":{
+        "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Boys]"],
+        "time_dependant":[
+            {
+                "name":"Curfew",
+                "start":"0:00",
+                "end":"5:00"
+            },
+        
+            {
+                "name":"GYM Boys",
+                "start":"7:00",
+                "end":"8:00"
+            },
+            {
+                "name":"Classes",
+                "start":"9:00",
+                "end":"17:00"
+            },
+            {
+                "name":"GYM Girls",
+                "start":"17:00",
+                "end":"18:30"
+
+            },
+           
+            {
+                "name":"GYM Boys",
+                "start":"18:35",
+                "end":"20:35"
+            },
+            {
+                "name":"Curfew",
+                "start":"23:00",
+                "end":"24:00"
+            }
+        ]
+    },
+    "Wednesday":{
+        "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Boys]"],
+        "time_dependant":[
+            {
+                "name":"Curfew",
+                "start":"0:00",
+                "end":"5:00"
+            },
+        
+            {
+                "name":"GYM Boys",
+                "start":"7:00",
+                "end":"8:00"
+            },
+            {
+                "name":"Classes",
+                "start":"9:00",
+                "end":"17:00"
+            },
+            {
+                "name":"GYM Girls",
+                "start":"17:00",
+                "end":"18:30"
+
+            },
+           
+            {
+                "name":"GYM Boys",
+                "start":"18:35",
+                "end":"20:35"
+            },
+            {
+                "name":"Curfew",
+                "start":"23:00",
+                "end":"24:00"
+            }
+        ]
+    },
+    "Thursday":{
+        "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Girls]"],
+        "time_dependant":[
+            {
+                "name":"Curfew",
+                "start":"0:00",
+                "end":"5:00"
+            },
+        
+            {
+                "name":"GYM Boys",
+                "start":"7:00",
+                "end":"8:00"
+            },
+            {
+                "name":"Classes",
+                "start":"9:00",
+                "end":"17:00"
+            },
+            {
+                "name":"GYM Girls",
+                "start":"17:00",
+                "end":"18:30"
+
+            },
+           
+            {
+                "name":"GYM Boys",
+                "start":"18:35",
+                "end":"20:35"
+            },
+            {
+                "name":"Curfew",
+                "start":"23:00",
+                "end":"24:00"
+            }
+        ]
+    },
+    "Friday":{
+        "all_day":["All Day Events","Entertainment Room [Mixed]","Laundry [Boys]"],
+        "time_dependant":[
+            {
+                "name":"Curfew",
+                "start":"0:00",
+                "end":"5:00"
+            },
+        
+            {
+                "name":"GYM Boys",
+                "start":"7:00",
+                "end":"8:00"
+            },
+            {
+                "name":"Classes",
+                "start":"9:00",
+                "end":"17:00"
+            },
+            {
+                "name":"GYM Girls",
+                "start":"17:00",
+                "end":"18:30"
+
+            },
+           
+            {
+                "name":"GYM Boys",
+                "start":"18:35",
+                "end":"20:35"
+            },
+            {
+                "name":"Curfew",
+                "start":"23:00",
+                "end":"24:00"
+            }
+        ]
+    },
+    "Saturday":{
+        "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Girls]"],
+        "time_dependant":[
+            {
+                "name":"Curfew",
+                "start":"0:00",
+                "end":"5:00"
+            },
+        
+            {
+                "name":"GYM Girls",
+                "start":"8:00",
+                "end":"9:00"
+            },
+        
+            {
+                "name":"GYM Boys",
+                "start":"9:10",
+                "end":"10:10"
+
+            },
+           
+            {
+                "name":"GYM Girls",
+                "start":"16:00",
+                "end":"18:00"
+            },
+            {
+                "name":"GYM Boys",
+                "start":"18:10",
+                "end":"20:10"
+            },
+            {
+                "name":"Curfew",
+                "start":"23:00",
+                "end":"24:00"
+            }
+        ]
+    }
+
+}
