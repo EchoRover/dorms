@@ -23,6 +23,7 @@ function renderEvents(alldata, day,timemet) {
     
     if (timemet == 1){
         const add =  " " + formatTime(parseTime(currentHours + ":" + currentMinutes));
+        title.classList.add('now');
         title.textContent = "Today " + day + add;
     }else{
         title.textContent =  day;
@@ -74,9 +75,17 @@ function renderEvents(alldata, day,timemet) {
              <div class="name">--</div>
              <div class="timmings">${formatTime(previousEndTime)} to ${formatTime(startTime)}</div>
          `;
-            if (currentDecimalHours < startTime && currentDecimalHours > previousEndTime && timemet == 1) {
-                gapDiv.classList.add("current_time")
-            }
+         gapDiv.setAttribute('date-start',previousEndTime);
+         gapDiv.setAttribute('date-end', startTime);
+         if (timemet == 1){
+            gapDiv.setAttribute('current-day',1);
+            
+         }else{
+            gapDiv.setAttribute('current-day',0);
+
+         }
+
+          
             timelineContainer.appendChild(gapDiv);
         }
 
@@ -100,9 +109,15 @@ function renderEvents(alldata, day,timemet) {
             eventDiv.classList.add('classes');
         }
         
-        if (currentDecimalHours >= startTime && currentDecimalHours <= endTime && timemet == 1) {
-            eventDiv.classList.add("current_time")
-        }
+       
+        eventDiv.setAttribute('date-start',startTime);
+        eventDiv.setAttribute('date-end', endTime);
+        if (timemet == 1){
+            eventDiv.setAttribute('current-day',1);
+         }else{
+            eventDiv.setAttribute('current-day',0);
+
+         }
         timelineContainer.appendChild(eventDiv);
 
         previousEndTime = endTime;
@@ -133,6 +148,39 @@ function formatTime(time) {
 
 
 
+
+function highlightCurrentTime() {
+    const currentTime = new Date();
+    const currentHours = currentTime.getHours();
+    const currentMinutes = currentTime.getMinutes();
+    const currentDecimalHours = currentHours + currentMinutes / 60;
+    var dates = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    const today = dates[currentTime.getDay()]
+
+   
+    const eventBlocks = document.querySelectorAll('.timeline .blank');
+    const title = document.getElementsByClassName('now')[0];
+
+    title.innerHTML = "Today " + today + " "+ formatTime(parseTime(currentHours + ":" + currentMinutes));
+
+   
+
+
+   
+    eventBlocks.forEach(eventBlock => {
+        const startTime = parseFloat(eventBlock.getAttribute('date-start'));
+        const endTime = parseFloat(eventBlock.getAttribute('date-end'));
+        const day = parseFloat(eventBlock.getAttribute('current-day'));
+
+
+        if (currentDecimalHours >= startTime && currentDecimalHours <= endTime && day == 1) {
+            eventBlock.classList.add('current_time');  
+        } else {
+            eventBlock.classList.remove('current_time'); 
+        }
+    });
+}
+
 function loadData() {
     fetch('data.json')
         .then(response => response.json())
@@ -151,9 +199,12 @@ function loadData() {
                 else{
                     renderEvents(data,event,0);
                 }
+
                 
 
             });
+            highlightCurrentTime();
+
         })
         .catch(error => console.error('Error loading data:', error));
 }

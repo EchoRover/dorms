@@ -40,9 +40,16 @@ main {
 
 }
 
+.today .timeline{
+    align-items: center;
+    justify-content: center;
+
+}
+
 .week .timeline {
     display: flex;
     flex-direction: column;
+    
     
 
 
@@ -88,7 +95,6 @@ main {
 
 .timeline {
 
-    
 
     display: flex;
     flex-wrap: wrap;
