@@ -1,19 +1,21 @@
 :root {
     font-family: roboto, sans-serif;
-    color: #343a40;
+    /* color: #343a40; */
+    color: #3c0a08;
     background-color: rgb(237, 247, 255);
 
 
 }
 
 main {
+
     display: grid;
     gap: 1rem;
     max-width: 850px;
-    width: 100%;
+   
+    
 
-    justify-self: center;
-    display: grid;
+  
 
 
 }
@@ -21,7 +23,7 @@ main {
 .today,
 .week {
     background-color: #eee9e8;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 12px;
 }
 
@@ -77,7 +79,8 @@ main {
     padding: 0.5rem;
 
     border-radius: 10px;
-    width: fit-content;
+    box-sizing: border-box;
+    width: 100%;
 
 
 
@@ -138,10 +141,12 @@ main {
 }
 
 body {
-    margin: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  
+    align-items: center;
+
+    width: 100%;
    
 
 
