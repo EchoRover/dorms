@@ -73,6 +73,7 @@
 }
 
 .topbar{
+    margin-top: 1rem;
         color: var(--primary-600);
         text-align: center;
     
