@@ -78,7 +78,7 @@
         ]
     },
     "Tuesday":{
-        "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Boys]"],
+        "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Girls]"],
         "time_dependant":[
             {
                 "name":"Curfew",
@@ -230,7 +230,7 @@
         ]
     },
     "Saturday":{
-        "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Girls]"],
+        "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Boys]"],
         "time_dependant":[
             {
                 "name":"Curfew",
