@@ -6,7 +6,7 @@ function renderEvents(alldata, day,timemet) {
  
     
     if(timemet == 0){
-        console.log(timemet)
+        
         Container = document.getElementsByClassName('week')[0];
       
     } 
@@ -45,6 +45,10 @@ function renderEvents(alldata, day,timemet) {
         if (event.includes('Girls')) {
             smalldiv.classList.add('girls');
         }
+        if (event.includes('Mixed')) {
+            smalldiv.classList.add('mixed');
+        }
+
 
         alldaycontainer.appendChild(smalldiv);
 
@@ -107,6 +111,9 @@ function renderEvents(alldata, day,timemet) {
         }
         else if (event.name.includes('Classes')) {
             eventDiv.classList.add('classes');
+        }
+        else if (event.name.includes('Mixed')) {
+            eventDiv.classList.add('mixed');
         }
         
        
@@ -180,7 +187,7 @@ function highlightCurrentTime() {
             eventBlock.classList.remove('current_time'); 
         }
         if (eventBlock.textContent.includes("Curfew")){
-            console.log(startTime,currentDecimalHours,endTime)
+      
             if (( currentDecimalHours >= 23 && currentDecimalHours <= 23.99 )||(currentDecimalHours >= 0 && currentDecimalHours < 5)){
                 eventBlock.classList.add('current_time');
             }
