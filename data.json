@@ -4,7 +4,7 @@
         "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Boys]"],
         "time_dependant":[
             {
-                "name":"Curfew",
+                "name":"Curfew (from 11pm daybefore)",
                 "start":"0:00",
                 "end":"5:00"
             },
@@ -43,7 +43,7 @@
         "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Boys]"],
         "time_dependant":[
             {
-                "name":"Curfew",
+                "name":"Curfew (from 11pm daybefore)",
                 "start":"0:00",
                 "end":"5:00"
             },
@@ -81,7 +81,7 @@
         "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Boys]"],
         "time_dependant":[
             {
-                "name":"Curfew",
+                "name":"Curfew (from 11pm daybefore)",
                 "start":"0:00",
                 "end":"5:00"
             },
@@ -119,7 +119,7 @@
         "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Boys]"],
         "time_dependant":[
             {
-                "name":"Curfew",
+                "name":"Curfew (from 11pm daybefore)",
                 "start":"0:00",
                 "end":"5:00"
             },
@@ -157,7 +157,7 @@
         "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Girls]"],
         "time_dependant":[
             {
-                "name":"Curfew",
+                "name":"Curfew (from 11pm daybefore)",
                 "start":"0:00",
                 "end":"5:00"
             },
@@ -195,7 +195,7 @@
         "all_day":["All Day Events","Entertainment Room [Mixed]","Laundry [Boys]"],
         "time_dependant":[
             {
-                "name":"Curfew",
+                "name":"Curfew (from 11pm daybefore)",
                 "start":"0:00",
                 "end":"5:00"
             },
@@ -233,7 +233,7 @@
         "all_day":["All Day Events","Entertainment Room [Girls]","Laundry [Girls]"],
         "time_dependant":[
             {
-                "name":"Curfew",
+                "name":"Curfew (from 11pm daybefore)",
                 "start":"0:00",
                 "end":"5:00"
             },
