@@ -117,6 +117,13 @@ h4{
     
 }
 
+.quicktoolsbox{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 main {
 
     display: grid;
