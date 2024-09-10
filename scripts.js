@@ -172,12 +172,22 @@ function highlightCurrentTime() {
         const endTime = parseFloat(eventBlock.getAttribute('date-end'));
         const day = parseFloat(eventBlock.getAttribute('current-day'));
 
+       
 
         if (currentDecimalHours >= startTime && currentDecimalHours <= endTime && day == 1) {
             eventBlock.classList.add('current_time');  
         } else {
             eventBlock.classList.remove('current_time'); 
         }
+        if (eventBlock.textContent.includes("Curfew")){
+            console.log(startTime,currentDecimalHours,endTime)
+            if (( currentDecimalHours >= 23 && currentDecimalHours <= 23.99 )||(currentDecimalHours >= 0 && currentDecimalHours < 5)){
+                eventBlock.classList.add('current_time');
+            }
+            
+            
+        }
+
     });
 }
 
@@ -193,6 +203,7 @@ function loadData() {
 
             dates.forEach(event =>{
                 if (event == today){
+                    renderEvents(data,event,0);
                     
 
                 }
