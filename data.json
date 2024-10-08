@@ -1,7 +1,7 @@
 
 {
     "Sunday":{
-        "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Boys]"],
+        "all_day":["All Day Events","Entertainment Room [Boys]","Laundry [Girls]"],
         "time_dependant":[
             {
                 "name":"Curfew",
